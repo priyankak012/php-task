@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+:root {
+  --color-white: #000;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(200, 200, 220, 0.6);
+  --color-darkRed: linear-gradient(
+    115deg,
+    rgba(255, 58, 158, 0.8),
+    rgba(190, 200, 180, 0.7)
+  );
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-white);
+  background-image: linear-gradient(
+      115deg,
+      rgba(171, 82, 126, 0.8),
+      rgba(190, 200, 180, 0.7)
+    ),
+    url(https://img.freepik.com/premium-vector/vector-background-light-pastel-rainbow-colors_56745-7.jpg?w=2000);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(228, 217, 217, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #fbf6f6;
+  background-color: #555;
+  background-clip: padding-box;
+  border: 1px solid rgba(255, 58, 158, 0.8);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+.button {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 19px;
+	font-size: 14px;
+	border-radius: 10px;
+	background-color: #586494;	
+	box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+	position: relative;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	display: inline-block;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+	margin-bottom: 40px;
+}
+footer p
+{
+   
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+    place-items:center;
+
+}

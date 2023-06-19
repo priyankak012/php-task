@@ -1,0 +1,82 @@
+* { box-sizing:border-box; }
+
+body {
+  background: #eee;
+ 
+}
+
+hgroup { 
+  text-align:center;
+  margin: top 2px;
+}
+span
+{
+ font-size:medium;
+ font-weight:auto;
+ font-style: normal;
+ color: rgb(132, 19, 19);
+}
+
+.log-form {
+  width: 500px;
+  margin: 4em auto;
+  padding: 3em 2em 2em 2em;
+  background: #d2dee3;
+  border: 1px solid #0a0808;
+  box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+
+.group { 
+  position: relative; 
+  margin-bottom: 45px; 
+}
+
+.log-input {
+  font-size:50px;
+
+  background: #d2dee3;
+  color: #5a5656;
+  width:auto;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+}
+
+.log-input:focus { outline: none; }
+
+.log-form a {
+    font: size 50px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.left-align {
+    float: left;
+    text-align: left;
+}
+
+.right-align {
+    float: right;
+    text-align: right;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    border: none;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: auto;
+    letter-spacing: 0.2em;
+    line-height: 24px;
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: none;
+    width: 100%;
+}
+footer
+{
+  display: block;
+  color: black;
+}
