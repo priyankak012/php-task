@@ -129,40 +129,39 @@ $total_pages = ceil($total_records / $pageRecords);
       </div>
     </form>
     <thead class="bg-dark text-dark text-center">
-  <tr>
-    <th>Index</th>
-    <th>
-      <a href="?page=<?= $page ?>&search=<?= $search ?>&sort=<?= ($sort == 'asc') ? 'desc' : 'asc' ?>">
-        Title
-        <?php if ($sort == 'asc') : ?>
-          <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Ascending">&#9650;</span>
-        <?php else : ?>
-          <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Descending">&#9660;</span>
-        <?php endif; ?>
-      </a>
-    </th>
-    <th>
-      <a href="?page=<?= $page ?>&search=<?= $search ?>&sort=<?= ($sort == 'asc') ? 'desc' : 'asc' ?>">
-        Description
-        <?php if ($sort == 'asc') : ?>
-          <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Ascending">&#9650;</span>
-        <?php else : ?>
-          <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Descending">&#9660;</span>
-        <?php endif; ?>
-      </a>
-    </th>
-    <th>Priority</th>
-    <th>Language</th>
-    <th>
-      <a href="?page=<?= $page ?>&search=<?= $search ?>&sort=<?= ($sort == 'asc') ? 'desc' : 'asc' ?>">
-        Status
-        <?php if ($sort == 'asc') : ?>
-          <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Ascending">&#9650;</span>
-        <?php else : ?>
-          <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Descending">&#9660;</span>
-        <?php endif; ?>
-      </a>
-    </th>
+  <th>
+  <a href="?page=<?= $page ?>&search=<?= $search ?>&sort=<?= ($sort == 'asc') ? 'desc' : 'asc' ?>&pageRecords=<?= $pageRecords ?>">
+    Title
+    <?php if ($sort == 'asc') : ?>
+      <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Ascending">&#9650;</span>
+    <?php else : ?>
+      <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Descending">&#9660;</span>
+    <?php endif; ?>
+  </a>
+</th>
+<th>
+  <a href="?page=<?= $page ?>&search=<?= $search ?>&sort=<?= ($sort == 'asc') ? 'desc' : 'asc' ?>&pageRecords=<?= $pageRecords ?>">
+    Description
+    <?php if ($sort == 'asc') : ?>
+      <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Ascending">&#9650;</span>
+    <?php else : ?>
+      <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Descending">&#9660;</span>
+    <?php endif; ?>
+  </a>
+</th>
+<th>Priority</th>
+<th>Language</th>
+<th>
+  <a href="?page=<?= $page ?>&search=<?= $search ?>&sort=<?= ($sort == 'asc') ? 'desc' : 'asc' ?>&pageRecords=<?= $pageRecords ?>">
+    Status
+    <?php if ($sort == 'asc') : ?>
+      <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Ascending">&#9650;</span>
+    <?php else : ?>
+      <span style="color: black;" class="data-bs-toggle=tooltip" data-bs-placement="right" title="Descending">&#9660;</span>
+    <?php endif; ?>
+  </a>
+</th>
+
     <th>File</th>
     <th>Date</th>
     <th>View</th>
